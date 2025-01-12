@@ -1,0 +1,14 @@
+name: AdminConsolePlugin
+version: 1.0
+main: com.yourname.adminconsoleplugin.AdminConsolePlugin
+api-version: 1.20
+description: A plugin that allows admins to execute console commands in-game.
+commands:
+  consolecmd:
+    description: Requests console access.
+    usage: /consolecmd
+    permission: adminconsole.request
+permissions:
+  adminconsole.request:
+    description: Allows the use of the /consolecmd command.
+    default: op
